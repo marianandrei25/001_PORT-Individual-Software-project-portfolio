@@ -3,7 +3,7 @@ name: CI - Build and Test
 on:
   push:
     branches:
-      - main  # Adjust this according to your main branch name
+      - DDDPROJECT  # Adjust this according to your main branch name
 
 jobs:
   build-and-test:
