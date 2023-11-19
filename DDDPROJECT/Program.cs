@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using Microsoft.VisualBasic;
@@ -96,7 +96,7 @@ while (menu)
         int startIndex3 = 7;
         int length3Three = 8;
 
-        foreach (string lineFile in File.ReadLines(@"C:\Users\672484\Desktop\regSTUDENTS.txt", Encoding.UTF8))
+        foreach (string lineFile in File.ReadLines(@"C:\users\672484\OneDrive - hull.ac.uk\Desktop\regSTUDENTS.txt", Encoding.UTF8))
         {
             // these wil look at specified indexes and give a specified length
 
@@ -142,10 +142,12 @@ while (menu)
 
 
             string parameterToCheck = usernameReg; // The parameter value you want to check
+            string parameterToCheck2 = type;
 
             bool parameterExistsInList = regUsers.Any(item => item.userName == parameterToCheck);
+            bool parameterExistsInList2 = regUsers.Any(item => item.type == parameterToCheck2);
 
-            if (parameterExistsInList)
+            if (parameterExistsInList && parameterExistsInList2)
             {
                 Console.WriteLine("STUDENT USER ALREADY REGISTERED");
 
@@ -163,7 +165,7 @@ while (menu)
                 regUsers.Add(USER);
 
 
-                string path = @"C:\Users\672484\Desktop\regSTUDENTS.txt";
+                string path = @"C:\users\672484\OneDrive - hull.ac.uk\Desktop\regSTUDENTS.txt";
                 if (!File.Exists(path))
                 {
                     File.Create(path);
@@ -220,10 +222,12 @@ while (menu)
             Register USER = new Register(usernameReg, type);
 
             string parameterToCheck = usernameReg; // The parameter value you want to check
+            string parameterToCheck2 = type;
 
             bool parameterExistsInList = regUsers.Any(item => item.userName == parameterToCheck);
+            bool parameterExistsInList2 = regUsers.Any(item => item.type == parameterToCheck2);
 
-            if (parameterExistsInList)
+            if (parameterExistsInList && parameterExistsInList2)
             {
                 Console.WriteLine("PERSONAL SUPERVISOR USER REGISTERED");
 
@@ -283,10 +287,12 @@ while (menu)
             Register USER = new Register(usernameReg, type);
 
             string parameterToCheck = usernameReg; // The parameter value you want to check
+            string parameterToCheck2 = type; // The parameter value you want to check
 
             bool parameterExistsInList = regUsers.Any(item => item.userName == parameterToCheck);
+            bool parameterExistsInList2 = regUsers.Any(item => item.type == parameterToCheck2);
 
-            if (parameterExistsInList)
+            if (parameterExistsInList && parameterExistsInList2)
             {
                 Console.WriteLine("USERNAME ALREADY PRESENT");
                 break;
@@ -304,7 +310,7 @@ while (menu)
                 regUsers.Add(USER);
 
 
-                string path = @"C:\Users\672484\Desktop\regSTUDENTS.txt";
+                string path = @"C:\users\672484\OneDrive - hull.ac.uk\Desktop\regSTUDENTS.txt";
                 if (!File.Exists(path))
                 {
                     File.Create(path);
@@ -383,14 +389,15 @@ while (menu)
 
         if (choice == 1)
         {
-
+            string typ = "STUDENT";
             string parameterToCheck = username; // The parameter value you want to check
 
 
             bool parameterExistsInList = regUsers.Any(item => item.userName == parameterToCheck);
+            bool parameterExistsInList2 = regUsers.Any(item => item.type == typ);
 
 
-            if (parameterExistsInList)
+            if (parameterExistsInList && parameterExistsInList2)
             {
                 Console.WriteLine("STUDENT FOUND NAME:" + " " + username + "ID: " + studentId);
 
@@ -577,8 +584,9 @@ while (menu)
             var parameterToCheck4 = password;
 
             bool parameterExistsInList = regUsers.Any(item => item.userName == parameterToCheck);
+            bool parameterExistsInList2 = regUsers.Any(item => item.type == parameterToCheck3);
 
-            if (parameterExistsInList)
+            if (parameterExistsInList && parameterExistsInList2)
             {
                 Console.WriteLine("PERSONAL SUPERVISOR" + " " + username + "" + studentId);
 
@@ -732,12 +740,13 @@ while (menu)
             string position = "SENIOR TUTOR";
 
             string parameterToCheck = username; // The parameter value you want to check
-
+            
 
             bool parameterExistsInList = regUsers.Any(item => item.userName == parameterToCheck);
-            ;
+            bool parameterExistsInList2 = regUsers.Any(item => item.type == position);
 
-            if (parameterExistsInList)
+
+            if (parameterExistsInList && parameterExistsInList2)
             {
 
                 bool menu2 = true;
@@ -787,11 +796,10 @@ while (menu)
     }
 }
 
-//Console.ForegroundColor = ConsoleColor.Yellow;
-//Console.Write("PLEASE ENTER A NUMBER: ");
-//Console.ResetColor();
 
-//string input = Console.ReadLine();
+
+
+
 
 
 
