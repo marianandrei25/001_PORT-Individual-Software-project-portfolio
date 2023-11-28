@@ -1,0 +1,21 @@
+--------------------------
+STUDENT: damian
+ID: 760274
+DESCRIBED WHEN ASKED HOW HE IS FEELING AND PROGRESSING
+AT Tuesday, 28 November 2023 15:32:09
+i am feeling good
+--------------------------
+--------------------------
+STUDENT: damian
+ID: 313464
+DESCRIBED WHEN ASKED HOW HE IS FEELING AND PROGRESSING
+AT Tuesday, 28 November 2023 15:42:25
+good
+--------------------------
+--------------------------
+STUDENT: damian andrei
+ID: 269490
+DESCRIBED WHEN ASKED HOW HE IS FEELING AND PROGRESSING
+AT Tuesday, 28 November 2023 18:00:41
+i am good with everything
+--------------------------

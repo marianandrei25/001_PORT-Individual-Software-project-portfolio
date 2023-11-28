@@ -1,0 +1,21 @@
+--------------------------
+STUDENT: damian
+ID: 760274
+BOOKED A MEETING WITH THE PERSONAL SUPERVISOR
+TIME OF BOOKING: 6/12 Between 11:00 - 15:00
+BOOKING CREATED 06/12/2023 15:32:10
+--------------------------
+--------------------------
+STUDENT: damian
+ID: 313464
+BOOKED A MEETING WITH THE PERSONAL SUPERVISOR
+TIME OF BOOKING: 20/12 Between 11:00 - 15:00
+BOOKING CREATED 20/12/2023 15:42:26
+--------------------------
+--------------------------
+STUDENT: damian andrei
+ID: 269490
+BOOKED A MEETING WITH THE PERSONAL SUPERVISOR
+TIME OF BOOKING: 19/12 Between 11:00 - 15:00
+BOOKING CREATED 19/12/2023 18:00:43
+--------------------------
