@@ -68,7 +68,24 @@ namespace UnitTests
             Assert.AreEqual(testUsername, user.userName);
 
         }
+      
+        
+        [TestMethod]
+        public void ReadFile_Success()
+        {
+            // Arrange
+            string filePath = "C:\\Users\\672484\\Desktop\\regSTUDENTS.txt"; // Replace with the path to your test file
+            string expectedContent = "TestForReadfile";
+            // Act
+            string actualContent;
+            using (StreamReader tw = File.OpenText(filePath))
+            {
+                actualContent =  tw.ReadToEnd();
+            }
 
+            // Assert
+            Assert.AreEqual(expectedContent, actualContent);
+        }
 
     }
 }
