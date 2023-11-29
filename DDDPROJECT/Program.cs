@@ -196,20 +196,6 @@ while (menu)
         }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         if (choice == 2)
         {
             type = "PERSONAL SUPERVISOR";
@@ -230,7 +216,7 @@ while (menu)
             string parameterToCheck2 = type;
 
             bool parameterExistsInList = regUsers.Any(item => item.userName == parameterToCheck);
-            bool parameterExistsInList2 = regUsers.Any(item => item.type == parameterToCheck2);
+           
             bool parameterExistsInList3 = regUsers.Any(item => item.passWord == passwordReg);
 
 
@@ -241,13 +227,13 @@ while (menu)
             string newpara1 = s;
             Console.WriteLine(s);
             bool newpara = regUsers.Any(item => item.newid == newpara1);
-            if (newpara && parameterExistsInList && parameterExistsInList2 && parameterExistsInList3)
+            if (newpara && parameterExistsInList && parameterExistsInList3)
             {
                 Console.WriteLine("STAFF ALREADY REGISTERED");
             }
             else
             {
-                Register USER1 = new Register(usernameReg, type, newpara1, passwordReg);
+                Register USER1 = new Register(usernameReg, newpara1, passwordReg);
                 regUsers.Add(USER1);
 
 
@@ -296,7 +282,7 @@ while (menu)
             string parameterToCheck2 = type; // The parameter value you want to check
 
             bool parameterExistsInList = regUsers.Any(item => item.userName == parameterToCheck);
-            bool parameterExistsInList2 = regUsers.Any(item => item.type == parameterToCheck2);
+            
             bool parameterExistsInList3 = regUsers.Any(item => item.passWord == passwordReg);
 
 
@@ -308,13 +294,13 @@ while (menu)
             Console.WriteLine(s);
 
             bool newpara = regUsers.Any(item => item.newid == s);
-            if (newpara && parameterExistsInList && parameterExistsInList2 && parameterExistsInList3)
+            if (newpara && parameterExistsInList && parameterExistsInList3)
             {
                 Console.WriteLine("STAFF ALREADY REGISTERED");
             }
             else
             {
-                Register USER1 = new Register(usernameReg, type, s, passwordReg);
+                Register USER1 = new Register(usernameReg, s, passwordReg);
                 regUsers.Add(USER1);
 
 
@@ -396,16 +382,16 @@ while (menu)
             Console.WriteLine("PASSWORD: ");
             string password = Console.ReadLine();
 
-            string typ = "STUDENT";
+            
             string parameterToCheck = username; // The parameter value you want to check
 
 
             bool parameterExistsInList = regUsers.Any(item => item.userName == parameterToCheck);
-            bool parameterExistsInList2 = regUsers.Any(item => item.type == typ);
+            
             bool newpara = regUsers.Any(item => item.newid == studentId);
             bool pass = regUsers.Any(item => item.passWord == password);
 
-            if (parameterExistsInList && parameterExistsInList2 && newpara && pass)
+            if (parameterExistsInList && newpara && pass)
             {
                 Console.WriteLine("STUDENT FOUND NAME:" + " " + username + "ID: " + studentId);
 
@@ -600,15 +586,15 @@ while (menu)
 
             string parameterToCheck = username; // The parameter value you want to check
             string parameterToCheck2 = studentId;
-            string parameterToCheck3 = "PERSONAL SUPERVISOR";
+           
             var parameterToCheck4 = password;
 
             bool parameterExistsInList = regUsers.Any(item => item.userName == parameterToCheck);
-            bool parameterExistsInList2 = regUsers.Any(item => item.type == parameterToCheck3);
+           
             bool newpara = regUsers.Any(item => item.newid == parameterToCheck2);
             bool parameterExistsInList3 = regUsers.Any(item => item.passWord == password);
 
-            if (parameterExistsInList && parameterExistsInList2 && newpara && parameterExistsInList3)
+            if (parameterExistsInList && newpara && parameterExistsInList3)
             {
                 Console.WriteLine("PERSONAL SUPERVISOR" + " " + username + "" + studentId);
 
@@ -827,6 +813,7 @@ while (menu)
 //Console.ResetColor();
 
 //string input = Console.ReadLine();
+
 
 
 
