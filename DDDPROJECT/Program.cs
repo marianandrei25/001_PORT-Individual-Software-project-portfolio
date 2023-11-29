@@ -146,8 +146,7 @@ while (menu)
             bool parameterExistsInList = regUsers.Any(item => item.userName == parameterToCheck);
             bool parameterExistsInList2 = regUsers.Any(item => item.passWord == parameterToCheck2);
 
-            bool parameterExistsInList3 = regUsers.Any(item => item.type == parameterToCheck2);
-
+            
 
 
 
@@ -159,13 +158,13 @@ while (menu)
             Console.WriteLine(s);
             string idtocheck = s;
             bool newpara = regUsers.Any(item => item.newid == idtocheck);
-            if (newpara && parameterExistsInList && parameterExistsInList2 && parameterExistsInList3)
+            if (newpara && parameterExistsInList && parameterExistsInList2)
             {
                 Console.WriteLine("STUDENT ALREADY REGISTERED");
             }
             else
             {
-                Register USER1 = new Register(usernameReg, type, idtocheck,passwordReg);
+                Register USER1 = new Register(usernameReg, idtocheck,passwordReg);
                 regUsers.Add(USER1);
 
 
@@ -194,6 +193,20 @@ while (menu)
 
             }
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         if (choice == 2)
@@ -808,11 +821,7 @@ while (menu)
     }
 }
 
-//Console.ForegroundColor = ConsoleColor.Yellow;
-//Console.Write("PLEASE ENTER A NUMBER: ");
-//Console.ResetColor();
 
-//string input = Console.ReadLine();
 
 
 
