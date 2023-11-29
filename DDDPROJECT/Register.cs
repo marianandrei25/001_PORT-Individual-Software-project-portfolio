@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,7 +20,7 @@ namespace DDD_PROJECT
         public string userName { get; set; }
         public string passWord { get; set; }
         public string type { get; set; }
-        public int newid { get; set; }
+        public string newid { get; set; }
         public string username1 { get; set; }
 
 
@@ -62,32 +62,25 @@ namespace DDD_PROJECT
             this.type = type;
 
 
-            //ID = NextID;
-            //NextID++;
-            //Console.ForegroundColor = ConsoleColor.Green;
-            //    Console.WriteLine("ID " + ID + " CREATED FOR " + type + " :" + userName);
-            //    Console.WriteLine("USER REGISTERED ");
-            //    Console.ResetColor();
-            //}
-            //// example of virtual method modified 
-            //public Register(string userName, string newid, string passWord, string type)
-            //{
+      
+        }
+        public Register(string userName, string passWordstring,string newid, string type)
+        {
 
-            //    this.userName = userName;
-            //    this.passWord = passWord;
-            //    this.type = type;
+            this.userName = userName;
+            this.passWord = passWord;
+            this.type = type;
+            this.newid = newid;
 
 
-            //    ID = NextID;
-            //    NextID++;
-            //    Console.ForegroundColor = ConsoleColor.Green;
-            //    //Console.WriteLine("ID " + ID + " CREATED FOR " + type + " :" + userName);
-            //    //Console.WriteLine("USER REGISTERED ");
-            //    //Console.ResetColor();
-            //}
 
         }
     }
+
+
+
+}
+
 
 
 
