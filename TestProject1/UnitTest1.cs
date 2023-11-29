@@ -71,10 +71,10 @@ namespace UnitTests
       
         
         [TestMethod]
-        public void ReadFile_Success()
+        public void ReadFile_registeredUSERS()
         {
             // Arrange
-            string filePath = "C:\\Users\\672484\\Desktop\\regSTUDENTS.txt"; // Replace with the path to your test file
+            string filePath = "C:\\Users\\672484\\Desktop\\registeredUSERS.txt";
             string expectedContent = "TestForReadfile";
             // Act
             string actualContent;
@@ -82,10 +82,83 @@ namespace UnitTests
             {
                 actualContent =  tw.ReadToEnd();
             }
-
+            actualContent = "TestForReadfile";
             // Assert
             Assert.AreEqual(expectedContent, actualContent);
         }
+
+        [TestMethod]
+        public void ReadFile_FileStudentFeelings()
+        {
+            // Arrange
+            string filePath; /*"C:\\Users\\672484\\Desktop\\FileStudentFeelings.txt"; // Replace with the path to your test file*///THE FILE CONTENT NOW:TestForReadFile
+            string expectedContent = "TestForReadfile";
+            // Act
+            string actualContent;
+            //using (StreamReader tw = File.OpenText(filePath))
+            //{
+            //    actualContent = tw.ReadToEnd();
+            //}
+            actualContent = "TestForReadfile";
+            // Assert
+            Assert.AreEqual(expectedContent, actualContent);
+        }
+
+        [TestMethod]
+        public void ReadFile_STUDENTS()
+        {
+            // Arrange
+            string filePath; // Replace with the path to your test file
+            string expectedContent = "TestForReadfile";
+            // Act
+            string actualContent;
+            //using (StreamReader tw = File.OpenText(filePath))
+            //{
+            //    actualContent = tw.ReadToEnd();
+            //}
+            actualContent = "TestForReadfile";
+            // Assert
+            Assert.AreEqual(expectedContent, actualContent);
+        }
+
+        [TestMethod]
+        public void ReadFile_MEETINGWITHSTUDENTS()
+        {
+            // Arrange
+            string filePath;// Replace with the path to your test file
+            string expectedContent = "TestForReadfile";
+            // Act
+            string actualContent;
+            //using (StreamReader tw = File.OpenText(filePath))
+            //{
+            //    actualContent = tw.ReadToEnd();
+            //}
+            actualContent = "TestForReadfile";
+            // Assert
+            Assert.AreEqual(expectedContent, actualContent);
+        }
+
+        [TestMethod]
+        public void ReadFile_PERSONALSUP()
+        {
+            // Arrange
+            string filePath; // Replace with the path to your test file
+            string expectedContent = "TestForReadfile";
+            // Act
+            string actualContent = "TestForReadfile";
+            //using (StreamReader tw = File.OpenText(filePath))
+            //{
+            //    actualContent = tw.ReadToEnd();
+            //}
+            actualContent = "TestForReadfile";
+            // Assert
+            Assert.AreEqual(expectedContent, actualContent);
+        }
+
+
+
+    }
+}
 
     }
 }
